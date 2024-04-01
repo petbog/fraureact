@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './style/index.scss';
+import './style/normalize.scss'
+import './style/rezet.scss'
 import App from './App';
 
 
