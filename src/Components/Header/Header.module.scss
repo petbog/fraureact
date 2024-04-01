@@ -1,0 +1,229 @@
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+
+.header__img {
+    width: 80px;
+    height: 80px;
+    margin-top: 14px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    min-height: 110px;
+    text-align: center;
+}
+
+.header__img {
+    margin-top: 30px;
+    z-index: 2;
+}
+
+.header__navList {
+    list-style: none;
+    text-decoration: none;
+
+
+}
+
+.header__navList a {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.list {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.header__nav ul li+li {
+    margin-left: 70px;
+}
+
+.header__navList {
+    transition: all 0.2s;
+    padding-bottom: 6px;
+}
+
+.header__navList:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.activ {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.header__nav_btn {
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    padding: 20px 0;
+    cursor: pointer;
+    position: relative;
+    top: 36px;
+    right: 20px;
+    display: none;
+    z-index: 3;
+}
+
+.header__nav_btn::after,
+.header__nav_btn::before {
+    content: '';
+    height: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.header__nav_btn::before {
+    top: 10px;
+}
+
+.header__nav_btn::after {
+    bottom: 10px;
+}
+
+.header__nav_btn span {
+    display: block;
+    height: 4px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.header__nav_btn.list--activ::before {
+    transform: rotate(-45deg);
+    top: 17px;
+}
+
+.header__nav_btn.list--activ::after {
+    transform: rotate(45deg);
+    bottom: 23px;
+}
+
+.header__nav_btn.list--activ span {
+    transform: scale(0);
+}
+
+.disabel {
+    visibility: hidden;
+}
+
+@media(max-width:900px) {
+    .header__nav ul {
+        position: absolute;
+        top: -110%;
+        left: 0;
+        display: inline-block;
+        background-color: #283645;
+        transition: all .5s;
+        width: 100%;
+        line-height: 70px;
+        padding: 28px 0 0 0;
+        border: 1px solid black;
+    }
+
+    .header__nav_btn {
+        display: block;
+    }
+
+    .header__img {
+        margin-top: 30px;
+    }
+
+    .header__nav ul li+li {
+        margin-left: 0;
+    }
+
+    .header__navList {
+        border: 1px solid #182029;
+    }
+
+    .activ {
+        border: none;
+    }
+
+    .list.list--activ {
+        top: -21%;
+    }
+
+    .disabel {
+        visibility: visible;
+        height: 181px;
+    }
+
+    .header__inner-title-text-bottom {
+        margin-top: 300px;
+        transition: all 0.5s;
+    }
+
+    .header__bottom-img-big {
+        background-position: 100% 100%;
+        background-size: 100% 71%;
+        transition: all .5s;
+    }
+}
+
+.header_img {
+    background-image: url(../../Img/XXXL.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+}
+
+@media(max-width:900px) {
+    .header_img {
+        background-image: url(../../Img/1579851845_1-p-bokali-s-pivom-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media(max-width:350px) {
+    .header_img {
+        background-image: url(../../Img/1579851845_1-p-bokali-s-pivom-1.jpg);
+        background-repeat: no-repeat;
+        background-position: 7%;
+    }
+}
+
+
+
+.arrow__img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 25px);
+    animation: arrowDown 2s infinite;
+    cursor: pointer;
+}
+
+.arrow__img.two {
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+@keyframes arrowDown {
+    0% {
+        bottom: 30;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 0px;
+        opacity: 0;
+    }
+}

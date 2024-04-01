@@ -3,10 +3,11 @@ import './style/App.scss';
 import { Path } from './Paths/Paths';
 import HomePage from './Pages/HomePage/HomePage';
 
+
 function App() {
   return (
     <div className="App">
-     <Routes>
+      <Routes>
         <Route path={Path.Home} element={<HomePage />} />
       </Routes>
     </div>
