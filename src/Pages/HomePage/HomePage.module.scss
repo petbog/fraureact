@@ -1,0 +1,35 @@
+.header_img {
+    background-image: url(../../Img/XXXL.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+}
+@media(max-width:900px) {
+    .header_img {
+        background-image: url(../../Img/1579851845_1-p-bokali-s-pivom-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media(max-width:350px) {
+    .header_img {
+        background-image: url(../../Img/1579851845_1-p-bokali-s-pivom-1.jpg);
+        background-repeat: no-repeat;
+        background-position: 7%;
+    }
+}
+
+/* info*/
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.img_container {
+    background-image: url('../../Img/Brick.jpg');
+    width: auto;
+}
+

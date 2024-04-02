@@ -102,17 +102,19 @@
     border-radius: 3px;
 }
 
-.header__nav_btn.list--activ::before {
+.header__nav_btn.list__activ::before {
     transform: rotate(-45deg);
     top: 17px;
+    transition: all ease 0.5s;
 }
 
-.header__nav_btn.list--activ::after {
+.header__nav_btn.list__activ::after {
     transform: rotate(45deg);
     bottom: 23px;
+    transition: all ease 0.5s;
 }
 
-.header__nav_btn.list--activ span {
+.header__nav_btn.list__activ span {
     transform: scale(0);
 }
 
@@ -154,8 +156,9 @@
         border: none;
     }
 
-    .list.list--activ {
+    .list.list__activ {
         top: -21%;
+        transition: all ease 1.5s;
     }
 
     .disabel {
@@ -175,29 +178,6 @@
     }
 }
 
-.header_img {
-    background-image: url(../../Img/XXXL.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    max-width: 100%;
-}
-
-@media(max-width:900px) {
-    .header_img {
-        background-image: url(../../Img/1579851845_1-p-bokali-s-pivom-1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-@media(max-width:350px) {
-    .header_img {
-        background-image: url(../../Img/1579851845_1-p-bokali-s-pivom-1.jpg);
-        background-repeat: no-repeat;
-        background-position: 7%;
-    }
-}
 
 
 

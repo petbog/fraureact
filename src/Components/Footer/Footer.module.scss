@@ -1,0 +1,216 @@
+
+.footer {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 160px;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.footer_img {
+    width: 105px;
+    height: 120px;
+    margin: 20px 35px 0 0;
+}
+
+.footer_location {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_location_location {
+    font-size: 16px;
+    line-height: 5px;
+    color: #808080;
+    letter-spacing: 1.2px;
+}
+
+.footer_location_address {
+    font-size: 19px;
+    line-height: 15px;
+    color: #fff;
+    margin: 0 0 6px 0;
+    font-size: 17px;
+}
+
+.footer_location_tel{
+    text-decoration: none;
+    line-height: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer__location_text {
+    margin-top: 43px;
+    height: 75px;
+}
+
+.working__hours {
+    margin-top: 13px;
+    height: 75px;
+}
+
+.working__hours_text {
+    font-size: 17px;
+    line-height: 5px;
+    color: #808080;
+}
+
+.working__hours_time {
+    font-size: 18px;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.live__music {
+    height: 61px;
+}
+
+.live__music_inner {
+    font-size: 17px;
+    line-height: 5px;
+    color: #808080;
+}
+
+.live__music_time {
+    font-size: 18px;
+    padding-top: 15px;
+    color: #fff;
+}
+
+@media(max-width:875px) {
+    .footer_img {
+        width: 96px;
+        height: 120px;
+        margin: 0 27px 0 0;
+    }
+
+    .footer_location {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer_location_location {
+        font-size: 13px;
+        line-height: 5px;
+        color: #808080;
+    }
+
+    .footer_location_address {
+        font-size: 15px;
+        line-height: 15px;
+        color: #fff;
+    }
+
+    .working__hours {
+        margin-top: 13px;
+        height: 75px;
+    }
+
+    .working__hours_text {
+        font-size: 13px;
+        line-height: 5px;
+        color: #808080;
+    }
+
+    .working__hours_time {
+        font-size: 15px;
+        padding-top: 15px;
+        color: #fff;
+    }
+
+    .live__music {
+        height: 61px;
+    }
+
+    .live__music_inner {
+        font-size: 13px;
+        line-height: 5px;
+        color: #808080;
+    }
+
+    .live__music_time {
+        font-size: 13px;
+        padding-top: 15px;
+        color: #fff;
+    }
+}
+
+@media(max-width:694px) {
+    .footer {
+        height: 225px;
+    }
+
+}
+
+@media(max-width:400px) {
+    .footer {
+        height: 201px;
+    }
+
+    .footer_location {
+        flex-wrap: wrap;
+    }
+
+    .footer_img {
+        width: 70px;
+        height: 120px;
+        margin: 0 27px 0 0;
+        margin: 0 27px 0 0;
+    }
+
+    .footer__location_text {
+        margin-left: -15px;
+    }
+
+    .footer_location_location {
+        font-size: 11px;
+        line-height: 5px;
+        color: #808080;
+    }
+
+    .footer_location_address {
+        font-size: 12px;
+        line-height: 7px;
+        color: #fff;
+    }
+    .footer_location_tel{
+        font-size: 12px;
+        line-height: 7px;
+        color: #fff;
+    }
+    .working__hours {
+        margin-top: 13px;
+        height: 75px;
+    }
+
+    .working__hours_text {
+        font-size: 11px;
+        line-height: 5px;
+        color: #808080;
+    }
+
+    .working__hours_time {
+        font-size: 13px;
+        padding-top: 9px;
+        color: #fff;
+    }
+
+    .live__music {
+        height: 64px;
+    }
+
+    .live__music_inner {
+        font-size: 11px;
+        line-height: 5px;
+        color: #808080;
+    }
+
+    .live__music_time {
+        font-size: 11px;
+        padding-top: 11px;
+        color: #fff;
+    }
+}
