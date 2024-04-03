@@ -1,5 +1,5 @@
 import Carousel from "nuka-carousel"
-import s from './SliderDecor.module.scss';
+import './SliderDecor.css';
 import { FC } from 'react';
 
 
@@ -9,16 +9,31 @@ import decor3 from '../../Img/sl1-3 (1).jpg'
 import decor4 from '../../Img/sl1-4 (1).jpg'
 
 
-
+const arr = [decor1, decor2, decor3, decor4]
 
 const SliderDecor: FC = () => {
+
+    const params = {
+        // autoplay:true,
+        defaultControlsConfig: {
+            containerClassName: 'containerClassName',
+            prevButtonClassName: 'prevButtonClassName',
+            nextButtonClassName: 'nextButtonClassName',
+            pagingDotsClassName: 'pagingDotsClassName',
+
+        }
+    }
+
     return (
-        <Carousel>
-            <img src={decor1} />
-            <img src={decor2} />
-            <img src={decor3} />
-            <img src={decor4} />
-        </Carousel>
+        <div>
+            <Carousel {...params}>
+                {
+                    arr.map((item, i) => (
+                        <img src={item} key={i} />
+                    ))
+                }
+            </Carousel>
+        </div>
     );
 };
 
