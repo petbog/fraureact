@@ -1,22 +1,61 @@
 import { FC } from 'react';
 import s from './TextInfo.module.scss';
+import { motion } from 'framer-motion'
 
 const TextInfo: FC = () => {
+
+    const textAnimation = {
+        hidden: {
+            x: -400,
+            opacity: 0
+        },
+        visible: (custom: number) => ({
+            x: 0,
+            opacity: 1,
+            transition: { delay: custom * 0.3 }
+        }),
+    }
+
+
+
+
+
+
     return (
-        <div className={s.info}>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
+            className={s.info}>
             <div className={s.info__title}>
-                <h1 className=""><a id="bottom"></a>Добро пожаловать в ресторан Фрау Мюллер!</h1>
+                <motion.h1
+                    variants={textAnimation}
+                    custom={1}
+
+                    className=""><a id="bottom"></a>Добро пожаловать в ресторан Фрау Мюллер!</motion.h1>
             </div>
-            <div className={s.info__text}>
+            <motion.div
+                variants={textAnimation}
+                custom={2}
+
+                className={s.info__text}>
                 Что может быть прекраснее, чем провести время или устроить празднество по тому или иному поводу в уютном
                 стильном месте, где тебя накормят вкуснейшей едой и напоят отборными напитками! <br />
 
                 Для жителей и гостей Ростова-на-Дону этот праздник может продолжаться каждый день. Ведь мясной ресторан Фрау
                 Мюллер всегда готов обслужить на высшем уровне.<br />
                 <div className={s.info__title_bottom}>
-                    <p className="">Чем удивит Фрау Мюллер:</p>
+                    <motion.p
+                        variants={textAnimation}
+                        custom={3}
+
+                        className="">Чем удивит Фрау Мюллер:</motion.p>
                 </div>
-                <ul className="">
+                <motion.ul
+                    variants={textAnimation}
+                    custom={4}
+
+                    className="">
                     <li > Наверное, в фирменном заведении нет ничего такого, что бы не удивило и не порадовало даже
                         самых взыскательных
                         гостей.<br /></li>
@@ -31,9 +70,9 @@ const TextInfo: FC = () => {
                         вкушать с удовольствием, любуясь могучими водами Дона, на который смотрят окна Фрау Мюллер в
                         Ростове.<br />
                     </li>
-                </ul>
-            </div>
-        </div>
+                </motion.ul>
+            </motion.div>
+        </motion.div>
     );
 };
 
