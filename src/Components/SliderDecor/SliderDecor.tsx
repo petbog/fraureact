@@ -1,6 +1,7 @@
 import Carousel from "nuka-carousel"
 import './SliderDecor.css';
 import { FC } from 'react';
+import { motion } from 'framer-motion'
 
 
 import decor1 from '../../Img/sl1-1 (1).jpg'
@@ -24,8 +25,27 @@ const SliderDecor: FC = () => {
         }
     }
 
+
+
+    const textAnimation = {
+        hidden: {
+            opacity: 0
+        },
+        visible: (custom: number) => ({
+            opacity: 1,
+            transition: { delay: custom * 0.3 }
+        }),
+    }
+
+
     return (
-        <div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
+            variants={textAnimation}
+            custom={2}
+        >
             <Carousel {...params}>
                 {
                     arr.map((item, i) => (
@@ -33,7 +53,7 @@ const SliderDecor: FC = () => {
                     ))
                 }
             </Carousel>
-        </div>
+        </motion.div>
     );
 };
 

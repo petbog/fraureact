@@ -3,6 +3,7 @@ import logo from '../../Img/logo.svg'
 import arrow from '../../Img/arrow2.png'
 import { Link } from 'react-router-dom'
 import { FC, useState } from 'react'
+import { Path } from '../../Paths/Paths'
 
 const Header: FC = () => {
 
@@ -27,10 +28,10 @@ const Header: FC = () => {
                             </button>
                             <ul className={style ? `${s.list} ${s.list__activ}` : s.list}>
                                 <li className={`${s.header__navList} ${s.disabel}`}></li>
-                                <li className={`${s.header__navList} ${s.activ}`}><Link to="/">Главная </Link></li>
-                                <li className={s.header__navList}><Link to="./menu.html">Меню</Link></li>
-                                <li className={s.header__navList}><Link to="./bar.html">Бар</Link></li>
-                                <li className={s.header__navList}><Link to="/wine.html">Винная карта</Link></li>
+                                <li className={`${s.header__navList} ${s.activ}`}><Link to={Path.Home}>Главная </Link></li>
+                                <li className={s.header__navList}><Link to={Path.Menu}>Меню</Link></li>
+                                <li className={s.header__navList}><Link to={Path.Bar}>Бар</Link></li>
+                                <li className={s.header__navList}><Link to={Path.Wine}>Винная карта</Link></li>
                                 <li className={s.header__navList}><Link to="./form.html">Забронировать стол</Link></li>
                             </ul>
                         </div>

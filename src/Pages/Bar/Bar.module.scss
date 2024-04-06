@@ -1,0 +1,22 @@
+.header_img {
+    background-image: url(../../Img/62215379-viski.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+
+}
+
+@media(max-width:482px) {
+    .header_img {
+        background-image: url(../../Img/1633.jpg);
+        background-size: 109% 100%;
+    }
+}
+
+@media(max-width:345px) {
+    .header_img {
+        background-image: url(../../Img/1633.jpg);
+        background-size: 141% 100%;
+    }
+}

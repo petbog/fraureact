@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Pagination, Navigation, Autoplay, EffectCoverflow } from 'swiper/modules';
+import { motion } from 'framer-motion'
 
 import dish1 from '../../Img/menu/1.jpg'
 import dish2 from '../../Img/menu/2.jpg'
@@ -19,9 +20,26 @@ import dish10 from '../../Img/menu/10.jpg'
 
 const Slider: FC = () => {
 
+    const textAnimation = {
+        hidden: {
+            opacity: 0
+        },
+        visible: (custom: number) => ({
+            opacity: 1,
+            transition: { delay: custom * 0.3 }
+        }),
+    }
+
 
     return (
-        <>
+        <motion.div
+        initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
+            variants={textAnimation}
+            custom={1}
+
+        >
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -85,7 +103,7 @@ const Slider: FC = () => {
                     <img src={dish10} />
                 </SwiperSlide>
             </Swiper>
-        </>
+        </motion.div>
     )
 }
 
