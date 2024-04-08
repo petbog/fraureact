@@ -11,7 +11,7 @@ const Wine: FC = () => {
             </div>
             <div className={s.img_container}>
                 <header className={s.header__top}>
-                    <div className={s.container}>
+                    <div id="bottom" className={s.container}>
 
                     </div>
                 </header>

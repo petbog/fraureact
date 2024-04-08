@@ -1,0 +1,249 @@
+.background {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1bc59b;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poppup {
+    position: relative;
+    max-width: 600px;
+    min-width: 600px;
+    margin: 0 auto;
+    flex-grow: 1;
+    box-sizing: border-box;
+
+}
+
+.poppup_box {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #F8FBFA;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.scrollOff {
+    overflow: hidden
+}
+
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 452px;
+    margin: auto;
+    position: relative;
+}
+
+.input_name {
+    box-sizing: border-box;
+    width: 100%;
+    height: 42px;
+    padding: 0 73px 0 21px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    margin: 0 0 30px 0;
+    outline: none;
+    position: relative;
+}
+
+.input_tel {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 42px;
+    padding: 0 73px 0 21px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    margin: 0 0 30px 0;
+    outline: none
+}
+
+.input_email {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 42px;
+    padding: 0 73px 0 21px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    margin: 0 0 17px 0;
+    outline: none
+}
+
+.input_button {
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    padding: 16px 0;
+    width: 196px;
+    margin: 16px auto 0 auto;
+    border: none;
+    background-color: #0DBC91;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+}
+
+.input_button:hover {
+    background-color: #00D29F;
+}
+
+.closePoppup {
+    position: absolute;
+    right: 20px;
+    top: -52px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all ease 0.3s;
+    stroke: #F8FBFA;
+}
+
+.closePoppup:hover {
+    opacity: 1;
+}
+
+.clear_name {
+    position: absolute;
+    top: 12px;
+    right: 29px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all ease 0.3s;
+}
+
+.clear_name:hover {
+    opacity: 1;
+}
+
+.clear_phone {
+    position: absolute;
+    top: 84px;
+    right: 29px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all ease 0.3s;
+}
+
+.clear_phone:hover {
+    opacity: 1;
+}
+
+.clear_email {
+    position: absolute;
+    top: 154px;
+    right: 29px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all ease 0.3s;
+}
+
+.clear_email:hover {
+    opacity: 1;
+}
+
+.errorValidTel{
+    color: red;
+    font-size: 16px;
+    position: absolute;
+    top: 47px;
+    left: 5px;
+}
+.errorValidName{
+    color: red;
+    font-size: 16px;
+    position: absolute;
+    top: -24px;
+    left: 5px;
+}
+.errorValidEmail{
+    color: red;
+    font-size: 16px;
+    position: absolute;
+    top: 119px;
+    left: 5px;
+}
+.bittonDIsabled{
+    background-color: rgb(3 70 41);
+}
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 50px;
+    z-index: 20;
+}
+
+
+@media(max-width:572px) {
+    .poppup_box {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .input {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+
+    .poppup_box {
+        width: 340px;
+    }
+
+    .closePoppup {
+        position: absolute;
+        right: 144px;
+        top: 19px;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: all ease 0.3s;
+        stroke: #569B89
+    }
+
+    .poppup_box {
+        margin: 0 auto;
+    }
+
+    .clear_name {
+        top: 12px;
+        right: 30px;
+    }
+
+
+    .clear_phone {
+        top: 83px;
+        right: 30px;
+    }
+
+    .clear_email {
+        top: 155px;
+        right: 30px;
+    }
+
+    .input_button {
+        display: flow-root;
+        margin: 16px auto 11px auto;
+    }
+}

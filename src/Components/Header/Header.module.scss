@@ -1,5 +1,4 @@
-
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -28,7 +27,11 @@
 .header__navList {
     list-style: none;
     text-decoration: none;
-
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 400;
+cursor: pointer;
 
 }
 
@@ -59,7 +62,7 @@
     border-bottom: 2px solid #FFFFFF;
 }
 
-.activ {
+.header__navList a.active {
     border-bottom: 2px solid #FFFFFF;
 }
 

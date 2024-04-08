@@ -1,5 +1,6 @@
 import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
+import SliceProduct from '../../Components/SliceProduct/SliceProduct';
 import s from './Menu.module.scss';
 import { FC } from 'react';
 
@@ -14,8 +15,8 @@ const Menu: FC = () => {
             </div>
             <div className={s.img_container}>
                 <header className={s.header__top}>
-                    <div className={s.container}>
-
+                    <div id="bottom" className={s.container}>
+                        <SliceProduct />
                     </div>
                 </header>
                 <Footer />
