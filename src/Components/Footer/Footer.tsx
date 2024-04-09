@@ -1,12 +1,20 @@
 import { FC } from 'react';
 import s from './Footer.module.scss';
 import logo from '../../Img/logo.svg'
+import { Link } from 'react-router-dom';
+import { Path } from '../../Paths/Paths';
 
 const Footer: FC = () => {
+
+const skrollTop=()=>{
+    window.scrollTo(0, 0);
+}
+
+
     return (
         <div className={s.footer}>
             <div className={s.footer_location}>
-                <a href="#"> <img src={logo} alt="logo" className={s.footer_img}/></a>
+                <div onClick={skrollTop}> <img src={logo} alt="logo" className={s.footer_img}/></div>
                 <div className={s.footer__location_text}>
                     <p className={s.footer_location_location}>МЫ НАХОДИМСЯ ПО АДРЕСУ</p><br/>
                         <p className={s.footer_location_address}>г.Ростов-на-Дону, ул. Береговая 29а</p>

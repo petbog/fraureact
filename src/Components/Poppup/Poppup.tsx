@@ -7,7 +7,7 @@ import { Dispatch, SetStateAction } from 'react';
 
 type PoppupPropsType = {
     PoppupWindow: boolean,
-    setPoppupWindow:Dispatch<SetStateAction<boolean>>
+    setPoppupWindow: Dispatch<SetStateAction<boolean>>
 }
 
 const Poppup = (props: PoppupPropsType) => {
@@ -46,7 +46,7 @@ const Poppup = (props: PoppupPropsType) => {
     }
 
     const closePoppup = () => {
-    
+
         setPoppupWindow(!PoppupWindow)
         document.body.style.overflow = 'auto'
         window.scrollTo(0, 0)
@@ -102,13 +102,13 @@ const Poppup = (props: PoppupPropsType) => {
     }
 
     return (
-        <div  className={PoppupWindow ? `${s.background} + ${s.scrollOff}` : s.background} >
+        <div className={PoppupWindow ? `${s.background} + ${s.scrollOff}` : s.background} >
             {/* {
               statusEmail === 'loading' ?  <img className={s.loader} src={loader} alt="loader" />: '' 
             } */}
             <div className={s.poppup}>
                 <div className={s.poppup_box}>
-                  
+
                     <div className={s.input}>
                         {
                             (nameDirty && nameError) && <div className={s.errorValidName} >{nameError}</div>
