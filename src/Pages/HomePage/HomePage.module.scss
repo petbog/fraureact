@@ -1,10 +1,17 @@
+.HomePage {
+    width: 100%;
+    overflow: hidden;
+}
+
 .header_img {
-    background-image: url(../../Img/XXXL.jpg);
+    background-image: url(../../Img/grilled-beef-steak-on-the-dark-wooden-surface-photoaidcom-darken-photoaidcom-darken.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
     height: 100vh;
     max-width: 100%;
 }
+
 @media(max-width:900px) {
     .header_img {
         background-image: url(../../Img/1579851845_1-p-bokali-s-pivom-1.jpg);
@@ -12,6 +19,7 @@
         background-size: cover;
     }
 }
+
 @media(max-width:350px) {
     .header_img {
         background-image: url(../../Img/1579851845_1-p-bokali-s-pivom-1.jpg);
@@ -21,7 +29,7 @@
 }
 
 /* info*/
-.container{
+.container {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
@@ -32,4 +40,3 @@
     background-image: url('../../Img/1664893250_56-amiel-club-p-chernaya-kirpichnaya-stena-fon-vkontakte-61.jpg');
     width: auto;
 }
-

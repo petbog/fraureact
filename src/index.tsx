@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './style/index.scss';
 import './style/normalize.scss'
 import './style/rezet.scss'
+import './style/variables.scss'
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 

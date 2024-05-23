@@ -1,0 +1,35 @@
+.Preview {
+    position: absolute;
+    top: 58%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: white;
+    line-height: 52px;
+    letter-spacing: 12px;
+
+
+    &_one {
+        font-size: 190px;
+        letter-spacing: 12px;
+        font-family: "Radio Canada Big", sans-serif;
+    }
+
+    &_two {
+        font-size: 134px;
+        letter-spacing: 104px;
+        font-family: "Radio Canada Big", sans-serif;
+    }
+
+    &_subtitle {
+        font-size: 40px;
+        letter-spacing: 4px;
+        max-width: 534px;
+        line-height: 51px;
+        margin: 84px 0px 0 26px;
+        font-family: "Radio Canada Big", sans-serif;
+    }
+}
+
+.box {
+    display: flex;
+}
