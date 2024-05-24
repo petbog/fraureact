@@ -15,7 +15,7 @@ const Menu: FC = () => {
             <div className={s.img_container}>
                 <header className={s.header__top}>
                     <div id="bottom" className={s.container}>
-                        <SliceProduct />
+                        {/* <SliceProduct /> */}
                     </div>
                 </header>
                 <Footer />

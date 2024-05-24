@@ -1,0 +1,54 @@
+.ParallaxTop {
+    width: 100vw;
+    min-height: 550px;
+    position: relative;
+    perspective: 0px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 2;
+    scroll-behavior: smooth;
+
+    &_img {
+        position: absolute;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        top: 700px;
+        filter: brightness(0.5);
+    }
+
+    &_img::before {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        content: '';
+        display: block;
+        z-index: -1;
+        transform-origin: center;
+        min-height: 100vh;
+        background-size: cover;
+        transition: 1s;
+    }
+}
+
+.box {
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+
+    &_item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--color-white);
+        z-index: 3;
+        font-size: 52px;
+        letter-spacing: 4px;
+    }
+}
