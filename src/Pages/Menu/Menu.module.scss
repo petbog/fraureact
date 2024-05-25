@@ -1,5 +1,5 @@
 .header_img {
-    background-image: url(../../Img/ax4.jpg);
+    // background-image: url(../../Img/ax4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -7,14 +7,14 @@
 }
 @media(max-width:900px) {
     .header_img {
-        background-image: url(../../Img//flambe-1.jpg);
+        // background-image: url(../../Img//flambe-1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
 @media(max-width:350px) {
     .header_img {
-        background-image: url(../../Img//flambe-1.jpg);
+        // background-image: url(../../Img//flambe-1.jpg);
         background-repeat: no-repeat;
         background-position: 7%;
     }
@@ -29,7 +29,7 @@
 }
 
 .img_container {
-    background-image: url('../../Img/1664893250_56-amiel-club-p-chernaya-kirpichnaya-stena-fon-vkontakte-61.jpg');
+    // background-image: url('../../Img/1664893250_56-amiel-club-p-chernaya-kirpichnaya-stena-fon-vkontakte-61.jpg');
     width: auto;
 }
 

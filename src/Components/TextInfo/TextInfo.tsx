@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import s from './TextInfo.module.scss';
 import { motion } from 'framer-motion'
-import photo from '../../Img/images.jpg'
+import photo from '../../Img/Изображение WhatsApp 2024-05-24 в 19.54.52_34def4ed.jpg'
 
 const TextInfo: FC = () => {
 
